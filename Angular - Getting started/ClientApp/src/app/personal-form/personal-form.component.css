@@ -1,0 +1,17 @@
+.input-group-text {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+
+.show-result {
+  text-align: center;
+}
+
+.modal-dialog {
+  margin: 12vh auto 0px auto
+}
+.modal-content {
+    border-block-width: thick;
+    border-inline-width: thick;
+}

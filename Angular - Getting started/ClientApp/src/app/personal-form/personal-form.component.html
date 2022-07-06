@@ -1,0 +1,31 @@
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Formularz osobowy</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Imię</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Wprowadź imię" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="firstName">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Nazwisko</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Wprowadź nazwisko" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="lastName">
+      </div>
+      <div class="show-result" *ngIf="finalName">
+        {{finalName}}
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="resetValues()">Wyjdź</button>
+      <button type="button" class="btn btn-primary" (click)="setNewName()">Zatwierdź</button>
+    </div>
+  </div>
+</div>
